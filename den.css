@@ -953,3 +953,11 @@ body {
 		color: var(--carolina-blue);
 	}
 }
+
+
+
+.holder-contact-book{
+	background-color: transparent;
+	display: flex;
+	justify-content: space-evenly;
+}
