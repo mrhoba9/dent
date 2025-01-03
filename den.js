@@ -37,5 +37,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const loadingScreen = document.getElementById("loadinPage-loading-screen");
     setTimeout(() => {
         loadingScreen.style.display = "none";
-    }, 4000);
+    }, 3000);
 });
+
+/*for saving contact*/
+document.getElementById("saveContact").onclick = downCont;
+function downCont() {
+	this.href = URL.createObjectURL(new Blob([`
+		BEGIN:VCARD
+		VERSION:3.0
+		FN:Abdelrahman Shoieb
+		TEL;TYPE=mobile:01021612312
+		TEL;TYPE=mobile:01555926159
+		TEL;TYPE=work:0403400642
+		TEL;TYPE=home:01092060889
+		EMAIL:abdelrahmanshoieb@gmail.com
+		ADR;TYPE=home:;;9 شارع عزيز فهمي - بجوار سينما مصر سابقا بعد صيدليه امل سعد - الدور التالت;طنطا;;;
+		END:VCARD
+	`], { type: 'text/vcard' }));
+}

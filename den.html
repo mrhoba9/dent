@@ -4,17 +4,73 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dentelo - We Are Best Dental Service</title>
-		<link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+
+		<!-- Meta Tags for SEO -->
+		<meta name="description" content="Looking for expert dental care in Tanta? Dr. Shoieb offers professional and affordable dental treatments, from routine check-ups to advanced procedures. Book your appointment today!"/>
+		<meta name="keywords" content="Dr. Shoieb, dentist in Tanta, dental clinic Egypt, dental care Tanta, dentist near Tanta, dental services Egypt, teeth cleaning Tanta, expert dental care, affordable dentist"/>
+		<meta name="author" content="Dr. Shoieb" />
+		<meta name="robots" content="index, follow" />
+
+		<!-- Open Graph Tags for better social media sharing -->
+		<meta property="og:title" content="Dr. Shoieb Dentist - Expert Dental Care in Tanta, Egypt"/>
+		<meta property="og:description" content="Looking for expert dental care in Tanta? Dr. Shoieb offers professional and affordable dental treatments, from routine check-ups to advanced procedures."/>
+		<meta property="og:image" content="https://www.yourwebsite.com/images/logo.png"/>
+		<meta property="og:url" content="https://www.yourwebsite.com" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Card Tags -->
+		<meta name="twitter:title" content="Dr. Shoieb Dentist - Expert Dental Care in Tanta, Egypt"/>
+		<meta name="twitter:description" content="Looking for expert dental care in Tanta? Dr. Shoieb offers professional and affordable dental treatments, from routine check-ups to advanced procedures."/>
+		<meta name="twitter:image" content="https://www.yourwebsite.com/images/logo.png"/>
+		<meta name="twitter:card" content="summary_large_image" />
+
+		<!-- Structured Data (JSON-LD) for Local Business -->
+		<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Dentist",
+            "name": "Dr. Shoieb",
+            "description": "Expert dental care in Tanta, Egypt. Professional services ranging from check-ups to advanced treatments.",
+            "url": "https://www.yourwebsite.com",
+            "logo": "https://www.yourwebsite.com/images/logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+201234567890",
+                "contactType": "Customer Service",
+                "areaServed": "EG",
+                "availableLanguage": "Arabic"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Your Street Name, Building 12",
+                "addressLocality": "Tanta",
+                "addressRegion": "Gharbia",
+                "postalCode": "31511",
+                "addressCountry": "EG"
+            },
+            "sameAs": [
+                "https://www.facebook.com/DrShoiebDental",
+                "https://twitter.com/DrShoiebDental",
+                "https://www.instagram.com/DrShoiebDental"
+            ]
+        }
+		</script>
+
+		<!--Never change here -->
+		<title>Dr. Shoieb Dentist</title>
+		<link rel="shortcut icon" href="./images/logo.png" type="image/svg+xml" />
 		<link rel="stylesheet" href="den.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"rel="stylesheet"/>
 	</head>
+
 	<body id="top">
+
     <div id="loadinPage-loading-screen">
-			<h1 class="loadinPage-loader-text">Dr.Shoieb</h1>
-		</div>
+		<h1 class="loadinPage-loader-text"><img src="./images/logo.png" alt=""></h1>
+	</div>
+	
 		<header class="header">
 			<div class="header-top">
 				<div class="container">
@@ -36,8 +92,8 @@
 						</li>
 						<li>
 							<a href="tel:+201555926159" class="social-link" aria-label="Call Us">
-                <ion-icon name="call" aria-hidden="true"></ion-icon>
-              </a>
+								<ion-icon name="call" aria-hidden="true"></ion-icon>
+							</a>
 						</li>
 						<li>
 							<a href="tel:+201555926159" class="social-link">
@@ -46,8 +102,8 @@
 						</li>
 						<li>
 							<a href="mailto:abdelrahmanshoieb@gmail.com" class="social-link" aria-label="Email Us">
-                <ion-icon name="mail" aria-hidden="true"></ion-icon>
-              </a>
+								<ion-icon name="mail" aria-hidden="true"></ion-icon>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -74,7 +130,7 @@
 							</li>
 						</ul>
 					</nav>
-					<a href="tel:+201092060889" class="btn">Book appointment</a>
+					<a href="tel:+201021612312" class="btn">Book appointment</a>
 					<button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
 						<ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
 						<ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
@@ -82,27 +138,20 @@
 				</div>
 			</div>
 		</header>
-
 		<main>
 			<article>
-				<section class="section hero"id="home"style="background-image: url('hero-bg.png')"aria-label="hero">
+				<section class="section hero"id="home"style="background-image: url('./images/hero-bg.png')"aria-label="hero">
 					<div class="container">
 						<div class="hero-content">
-							<p class="section-subtitle">Welcome To Shoieb</p>
+							<p class="section-subtitle">Welcome To Dr.Shoieb Dentist</p>
 							<h1 class="h1 hero-title">We Are Best Dental Service</h1>
-							<p class="hero-text">Donec vitae libero non enim placerat eleifend aliquam eratvolutpat. Curabitur diam ex, dapibus purus sapien, cursus sednisl tristique, commodo gravida lectus non.
-							</p>
-							<!-- <form action="" class="hero-form">
-								<input type="email" name="email_address" aria-label="email" placeholder="Email Me..." required class="email-field"/>
-								<button type="submit" class="btn">Get Call Back</button>
-							</form> -->
+							<p class="hero-text">Experience exceptional dental care with advanced treatments and compassionate service tailored to your needs.</p>
 						</div>
 						<figure class="hero-banner">
-							<img src="hero-banner.png" width="587" height="839" alt="hero banner" class="w-100"/>
+							<img src="./images/hero-banner.png" width="587" height="839" alt="hero banner" class="w-100"/>
 						</figure>
 					</div>
 				</section>
-
 				<section class="section service" id="service" aria-label="service">
 					<div class="container">
 						<p class="section-subtitle text-center">Our Services</p>
@@ -111,232 +160,99 @@
 							<li>
 								<div class="service-card">
 									<div class="card-icon">
-										<img src="service-icon-1.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100"/>
+										<img src="./images/service-icon-1.png" width="100" height="100" loading="lazy" alt="Root Canal service icon" class="w-100"/>
 									</div>
 									<div>
 										<h3 class="h3 card-title">Root Canal</h3>
-										<p class="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementumac.</p>
+										<p class="card-text">A procedure to remove damaged tissue and preserve the tooth.</p>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="service-card">
 									<div class="card-icon">
-										<img src="service-icon-2.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100"/>
+										<img src="./images/service-icon-2.png" width="100" height="100" loading="lazy" alt="Teeth Alignment service icon" class="w-100"/>
 									</div>
 									<div>
 										<h3 class="h3 card-title">Alignment Teeth</h3>
-										<p class="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementumac.</p>
+										<p class="card-text">Teeth straightening to improve your smile and oral health.</p>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="service-card">
 									<div class="card-icon">
-										<img src="service-icon-3.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100"/>
+										<img src="./images/service-icon-3.png" width="100" height="100" loading="lazy" alt="Cosmetic Teeth service icon" class="w-100"/>
 									</div>
 									<div>
 										<h3 class="h3 card-title">Cosmetic Teeth</h3>
-										<p class="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementumac.</p>
+										<p class="card-text">Enhance your smile with whitening, veneers, and bonding.</p>
 									</div>
 								</div>
 							</li>
 							<li class="service-banner">
 								<figure>
-									<img src="service-banner.png" width="409" height="467" loading="lazy" alt="service banner" class="w-100"/>
+									<img src="./images/service-banner.png" width="409" height="467" loading="lazy" alt="service banner" class="w-100"/>
 								</figure>
 							</li>
 							<li>
 								<div class="service-card">
 									<div class="card-icon">
-										<img src="service-icon-4.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100"/>
+										<img src="./images/service-icon-4.png" width="100" height="100" loading="lazy" alt="Oral Hygiene service icon" class="w-100"/>
 									</div>
 									<div>
 										<h3 class="h3 card-title">Oral Hygiene</h3>
-										<p class="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementumac.
-										</p>
+										<p class="card-text">Regular cleanings and tips to maintain a healthy mouth.</p>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="service-card">
 									<div class="card-icon">
-										<img src="service-icon-5.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100"/>
+										<img src="./images/service-icon-5.png" width="100" height="100" loading="lazy" alt="Live Advisory service icon" class="w-100"/>
 									</div>
 									<div>
 										<h3 class="h3 card-title">Live Advisory</h3>
-										<p class="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementumac.
-										</p>
+										<p class="card-text">Get personalized dental advice through live consultations.</p>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="service-card">
 									<div class="card-icon">
-										<img src="service-icon-6.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100"/>
+										<img src="./images/service-icon-6.png" width="100" height="100" loading="lazy" alt="Cavity Inspection service icon" class="w-100"/>
 									</div>
 									<div>
 										<h3 class="h3 card-title">Cavity Inspection</h3>
-										<p class="card-text">Aenean eleifend turpis tellus, nec laoreet metus elementumac.
-										</p>
+										<p class="card-text">Early detection of cavities to prevent further dental issues.</p>
 									</div>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</section>
-
 				<section class="section about" id="about" aria-label="about">
 					<div class="container">
 						<figure class="about-banner">
-							<img src="about-banner.png" width="470" height="538" loading="lazy" alt="about banner" class="w-100"/>
+							<img src="./images/about-banner.png" width="470" height="538" loading="lazy" alt="about banner" class="w-100"/>
 						</figure>
 						<div class="about-content">
 							<p class="section-subtitle">About Us</p>
 							<h2 class="h2 section-title">We Care For Your Dental Health</h2>
 							<p class="section-text section-text-1">
-								Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio.
-								Nullam quis volutpat est, sed dapibus sapien. Cras condimentum
-								eu velit id tempor. Curabitur purus sapien, cursus sed nisl
-								tristique, commodo vehicula arcu.
+								Maintaining good oral hygiene is essential for a healthy smile. Regular brushing, flossing, and professional dental cleanings help prevent cavities, gum disease, and other dental issues. Your oral health is directly linked to your overall health, which is why it's important to take care of your teeth and gums every day.
 							</p>
 							<p class="section-text">
-								Aliquam erat volutpat. Aliquam enim massa, sagittis blandit ex
-								mattis, ultricies posuere sapien. Morbi a dignissim enim. Fusce
-								elementum, augue in elementum porta, sapien nunc volutpat ex, a
-								accumsan nunc lectus eu lectus.
+								At our clinic, we offer a wide range of services to ensure your dental health is in top condition. From routine checkups and cleanings to more advanced procedures like fillings and crowns, we are dedicated to providing personalized care to meet your needs and help you maintain optimal oral health for years to come.
 							</p>
-							<a href="https://www.facebook.com/share/1A5y6Yczfi/?mibextid=wwXIfr" class="btn">Read more</a>
+							<a href="https://www.facebook.com/share/1A5y6Yczfi/?mibextid=wwXIfr" class="btn" style="margin-bottom: 20px;">Read more</a>
 						</div>
 					</div>
 				</section>
-
-				<!-- <section class="section doctor" aria-label="doctor">
-					<div class="container">
-						<p class="section-subtitle text-center">Our Doctor</p>
-						<h2 class="h2 section-title text-center">Best Expert Dentist</h2>
-						<ul class="has-scrollbar">
-							<li class="scrollbar-item">
-								<div class="doctor-card">
-									<div class="card-banner img-holder"style="--width: 460; --height: 500">
-										<img src="doctor-1.png" width="460" height="500" loading="lazy" alt="Howard Holmes" class="img-cover"/>
-									</div>
-									<h3 class="h3">
-										<a href="#" class="card-title">Howard Holmes</a>
-									</h3>
-									<p class="card-subtitle">Dentist</p>
-									<ul class="card-social-list">
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-facebook"></ion-icon>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-twitter"></ion-icon>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-instagram"></ion-icon>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li class="scrollbar-item">
-								<div class="doctor-card">
-									<div class="card-banner img-holder"style="--width: 460; --height: 500">
-										<img src="doctor-2.png" width="460" height="500" loading="lazy" alt="Ella Thompson" class="img-cover"/>
-									</div>
-									<h3 class="h3">
-										<a href="#" class="card-title">Ella Thompson</a>
-									</h3>
-									<p class="card-subtitle">Dentist</p>
-									<ul class="card-social-list">
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-facebook"></ion-icon>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-twitter"></ion-icon>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-instagram"></ion-icon>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li class="scrollbar-item">
-								<div class="doctor-card">
-									<div class="card-banner img-holder"style="--width: 460; --height: 500">
-										<img src="doctor-3.png" width="460" height="500" loading="lazy" alt="Vincent Cooper" class="img-cover"/>
-									</div>
-									<h3 class="h3">
-										<a href="#" class="card-title">Vincent Cooper</a>
-									</h3>
-									<p class="card-subtitle">Dentist</p>
-									<ul class="card-social-list">
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-facebook"></ion-icon>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-twitter"></ion-icon>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-instagram"></ion-icon>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-
-							<li class="scrollbar-item">
-								<div class="doctor-card">
-									<div class="card-banner img-holder"style="--width: 460; --height: 500">
-										<img src="doctor-4.png" width="460" height="500" loading="lazy" alt="Danielle Bryant" class="img-cover"/>
-									</div>
-									<h3 class="h3">
-										<a href="#" class="card-title">Danielle Bryant</a>
-									</h3>
-									<p class="card-subtitle">Dentist</p>
-									<ul class="card-social-list">
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-facebook"></ion-icon>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-twitter"></ion-icon>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="card-social-link">
-												<ion-icon name="logo-instagram"></ion-icon>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section> -->
-
 				<section class="section cta" aria-label="cta">
 					<div class="container">
 						<figure class="cta-banner">
-							<img src="cta-banner.png" width="1056" height="1076" loading="lazy" alt="cta banner" class="w-100"/>
+							<img src="./images/cta-banner.png" width="1056" height="1076" loading="lazy" alt="cta banner" class="w-100"/>
 						</figure>
 						<div class="cta-content">
 							<p class="section-subtitle">Book Dentail Appointment</p>
@@ -345,7 +261,6 @@
 						</div>
 					</div>
 				</section>
-
 				<section class="section blog" id="blog" aria-label="blog">
 					<div class="container">
 						<p class="section-subtitle text-center">Our Blog</p>
@@ -354,17 +269,14 @@
 							<li>
 								<div class="blog-card">
 									<figure class="card-banner img-holder" style="--width: 1180; --height: 800">
-										<img src="blog-1.jpg" width="1180" height="800" loading="lazy" alt="Cras accumsan nulla nec lacus ultricies placerat." class="img-cover"/>
-										<div class="card-badge">
-											<ion-icon name="calendar-outline"></ion-icon>
-											<time class="time" datetime="2022-03-24">26th December 2024</time>
-										</div>
+										<img src="./images/blog-1.jpg" width="1180" height="800" loading="lazy" alt="Cras accumsan nulla nec lacus ultricies placerat." class="img-cover"/>
 									</figure>
 									<div class="card-content">
 										<h3 class="h3">
-											<a href="https://www.facebook.com/share/p/Tw5TmKm7FGnuWhLY/" class="card-title">Cras accumsan nulla nec lacus ultricies placerat.</a>
+											<a href="https://www.facebook.com/share/p/Tw5TmKm7FGnuWhLY/" class="card-title">Dental Care Tips for a Healthy Smile</a>
 										</h3>
-										<p class="card-text">Curabitur sagittis libero tincidunt tempor finibus. Maurisat dignissim ligula, nec tristique orci.
+										<p class="card-text">
+											Keep your teeth clean and your smile brighter. Brushing twice a day, flossing regularly, and visiting your dentist every six months are essential practices for maintaining optimal oral health and a beautiful smile.
 										</p>
 										<a href="https://www.facebook.com/share/p/Tw5TmKm7FGnuWhLY/" class="card-link">Read More</a>
 									</div>
@@ -372,18 +284,15 @@
 							</li>
 							<li>
 								<div class="blog-card">
-									<figure class="card-banner img-holder"style="--width: 1180; --height: 800">
-										<img src="blog-2.jpg" width="1180" height="800" loading="lazy" alt="Dras accumsan nulla nec lacus ultricies placerat." class="img-cover"/>
-										<div class="card-badge">
-											<ion-icon name="calendar-outline"></ion-icon>
-											<time class="time" datetime="2022-03-24">25th December 2024</time>
-										</div>
+									<figure class="card-banner img-holder" style="--width: 1180; --height: 800">
+										<img src="./images/blog-2.jpg" width="1180" height="800" loading="lazy" alt="Dras accumsan nulla nec lacus ultricies placerat." class="img-cover"/>
 									</figure>
 									<div class="card-content">
 										<h3 class="h3">
-											<a href="https://www.facebook.com/share/p/RqaTqd9uyVpwTTFv/" class="card-title">Dras accumsan nulla nec lacus ultricies placerat.</a>
+											<a href="https://www.facebook.com/share/p/RqaTqd9uyVpwTTFv/" class="card-title">Importance of Dental Checkups</a>
 										</h3>
-										<p class="card-text">Curabitur sagittis libero tincidunt tempor finibus. Maurisat dignissim ligula, nec tristique orci.
+										<p class="card-text">
+											Regular visits to ensure optimal oral health. Scheduling a dental checkup at least once a year helps detect any issues early, preventing more serious conditions and promoting long-lasting dental well-being.
 										</p>
 										<a href="https://www.facebook.com/share/p/RqaTqd9uyVpwTTFv/" class="card-link">Read More</a>
 									</div>
@@ -391,18 +300,15 @@
 							</li>
 							<li>
 								<div class="blog-card">
-									<figure class="card-banner img-holder"style="--width: 1180; --height: 800">
-										<img src="blog-3.jpg" width="1180" height="800" loading="lazy" alt="Seas accumsan nulla nec lacus ultricies placerat." class="img-cover"/>
-										<div class="card-badge">
-											<ion-icon name="calendar-outline"></ion-icon>
-											<time class="time" datetime="2022-03-24">23th December 2024</time>
-										</div>
+									<figure class="card-banner img-holder" style="--width: 1180; --height: 800">
+										<img src="./images/blog-3.jpg" width="1180" height="800" loading="lazy" alt="Seas accumsan nulla nec lacus ultricies placerat." class="img-cover"/>
 									</figure>
 									<div class="card-content">
 										<h3 class="h3">
-											<a href="https://www.facebook.com/share/p/kDcG6Wq4KxCuPvLG/" class="card-title">Seas accumsan nulla nec lacus ultricies placerat.</a>
+											<a href="https://www.facebook.com/share/p/kDcG6Wq4KxCuPvLG/" class="card-title">Proper Techniques for Oral Hygiene</a>
 										</h3>
-										<p class="card-text">Curabitur sagittis libero tincidunt tempor finibus. Maurisat dignissim ligula, nec tristique orci.
+										<p class="card-text">
+											Learn the best methods for healthy gums. Proper brushing techniques, such as using a soft-bristled toothbrush and brushing in circular motions, along with the right flossing method, ensure a clean mouth and prevent gum disease.
 										</p>
 										<a href="https://www.facebook.com/share/p/kDcG6Wq4KxCuPvLG/" class="card-link">Read More</a>
 									</div>
@@ -413,16 +319,13 @@
 				</section>
 			</article>
 		</main>
-
 		<footer class="footer">
 			<div class="footer-top section">
 				<div class="container">
 					<div class="footer-brand">
-						<a href="#" class="logo">Dr.Shoieb</a>
+						<a href="#" class="logo">Dr.Shoieb Dentist</a>
 						<p class="footer-text">
-							Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur
-							sagittis libero tincidunt tempor finibus. Mauris at dignissim
-							ligula, nec tristique orci.Quisque vitae metus.
+							Providing quality dental care with expert techniques and a commitment to your oral health and comfort.
 						</p>
 						<div class="schedule">
 							<div class="schedule-icon">
@@ -430,7 +333,7 @@
 							</div>
 							<span class="span">
 								Monday - Saturday:<br />
-								9:00am - 10:00Pm
+								9:00am - 10:00pm
 							</span>
 						</div>
 					</div>
@@ -518,27 +421,21 @@
 					</ul>
 					<ul class="footer-list">
 						<li>
-							<p class="footer-list-title">Contact Us</p>
+							<p class="footer-list-title">Save Contact</p>
 						</li>
 						<li class="footer-item">
 							<div class="item-icon">
-								<ion-icon name="location-outline"></ion-icon>
+								<ion-icon name="qr-code-outline"></ion-icon>
 							</div>
 							<address class="item-text">
-								طنطا - 9 شارع عزيز فهمي- بجوار سينما مصر سابقا بعد صيدليه امل سعد - الدور التالت
+								<img src="./images/qrCode.png" alt="" style="width: 100px; height: 100px;">(Recommended)
 							</address>
 						</li>
 						<li class="footer-item">
 							<div class="item-icon">
-								<ion-icon name="call-outline"></ion-icon>
+								<ion-icon name="save-outline"></ion-icon>
 							</div>
-							<a href="tel:+201021612312" class="footer-link">+201021612312</a>
-						</li>
-						<li class="footer-item">
-							<div class="item-icon">
-								<ion-icon name="mail-outline"></ion-icon>
-							</div>
-							<a href="mailto:abdelrahmanshoieb@gmail.com" class="footer-link">abdelrahmanshoieb@gmail.com</a>
+							<a href="#" id="saveContact" download="contact.vcf" class="footer-link">Click Here To Save</a>
 						</li>
 					</ul>
 				</div>
@@ -546,21 +443,21 @@
 			<div class="footer-bottom">
 				<div class="container">
 					<p class="copyright">
-						&copy; 2025 All Rights Reserved by SHOIEB.
+						&copy; 2025 All Rights Reserved by AURO.
 					</p>
 					<ul class="social-list">
 						<li>
-							<a href="https://www.facebook.com/share/1A5y6Yczfi/?mibextid=wwXIfr" class="social-link">
+							<a href="https://www.facebook.com/MediaMora.Company?mibextid=ZbWKwL" class="social-link">
 								<ion-icon name="logo-facebook"></ion-icon>
 							</a>
 						</li>
 						<li>
-							<a href="mailto:abdelrahmanshoieb@gmail.com" class="social-link" aria-label="Email Us">
-                <ion-icon name="mail" aria-hidden="true"></ion-icon>
-              </a>
+							<a href="https://www.instagram.com/mediamora_company?igsh=MTJ4cGk1emlxeTdlZA==" class="social-link" aria-label="Email Us">
+								<ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+							</a>
 						</li>
 						<li>
-							<a href="tel:+201555926159" class="social-link">
+							<a href="tel:+201270514225" class="social-link">
 								<ion-icon name="logo-whatsapp"></ion-icon>
 							</a>
 						</li>
@@ -568,14 +465,10 @@
 				</div>
 			</div>
 		</footer>
-
 		<a href="tel:+201021612312" class="back-top-btn" aria-label="back to top" data-back-top-btn>
 			<ion-icon name="call" aria-hidden="true"></ion-icon>
 		</a>
-    <!-- <a href="#" class="con" aria-label="Call Us" data-back-top-btn>
-      <ion-icon name="call" aria-hidden="true"></ion-icon>
-    </a> -->
-    
+
 
 		<script src="den.js" defer></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

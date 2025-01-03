@@ -45,7 +45,9 @@
 	--transition: 0.25s ease;
 	--cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
-*,*::before,*::after {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -57,13 +59,19 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-a,img,span,input,button,ion-icon {
+a,
+img,
+span,
+input,
+button,
+ion-icon {
 	display: block;
 }
 img {
 	height: auto;
 }
-input,button {
+input,
+button {
 	background: none;
 	border: none;
 	font: inherit;
@@ -104,7 +112,9 @@ body {
 	text-transform: uppercase;
 	margin-block-end: 10px;
 }
-.h1,.h2,.h3 {
+.h1,
+.h2,
+.h3 {
 	font-family: var(--ff-poppins);
 	line-height: 1.2;
 }
@@ -112,7 +122,8 @@ body {
 	color: var(--oxford-blue-1);
 	font-size: var(--fs-2);
 }
-.h2,.h3 {
+.h2,
+.h3 {
 	color: var(--oxford-blue-2);
 }
 .h2 {
@@ -144,7 +155,8 @@ body {
 .text-center {
 	text-align: center;
 }
-.card-text,.section-text {
+.card-text,
+.section-text {
 	line-height: 1.7;
 }
 .img-holder {
@@ -156,7 +168,8 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
-.header-top, .header-bottom .btn {
+.header-top,
+.header-bottom .btn {
 	display: none;
 }
 .header-bottom {
@@ -199,12 +212,14 @@ body {
 	font-size: 30px;
 	border: 1px solid var(--black);
 	padding: 5px;
-    border-radius: 20px;
+	border-radius: 20px;
 }
-.nav-toggle-btn.active .menu-icon,.nav-toggle-btn .close-icon {
+.nav-toggle-btn.active .menu-icon,
+.nav-toggle-btn .close-icon {
 	display: none;
 }
-.nav-toggle-btn .menu-icon,.nav-toggle-btn.active .close-icon {
+.nav-toggle-btn .menu-icon,
+.nav-toggle-btn.active .close-icon {
 	display: block;
 }
 .navbar {
@@ -490,14 +505,16 @@ body {
 	align-items: center;
 	gap: 15px;
 }
-.schedule-icon,.footer-item .item-icon {
+.schedule-icon,
+.footer-item .item-icon {
 	background-image: var(--gradient);
 	color: var(--white);
 	font-size: 18px;
 	padding: 11px;
 	border-radius: 50%;
 }
-.schedule .span,.footer-item .item-text {
+.schedule .span,
+.footer-item .item-text {
 	line-height: 1.6;
 }
 .footer-list-title {
@@ -555,7 +572,6 @@ body {
 .footer .social-link:is(:hover, :focus) {
 	background-image: var(--gradient);
 }
-
 
 .back-top-btn {
 	position: fixed;
@@ -759,7 +775,9 @@ body {
 		color: var(--white);
 		padding-block: 20px;
 	}
-	.header-top :is(.container, .social-list),.contact-list,.contact-item {
+	.header-top :is(.container, .social-list),
+	.contact-list,
+	.contact-item {
 		display: flex;
 		align-items: center;
 	}
@@ -799,7 +817,8 @@ body {
 	.nav-toggle-btn {
 		display: none;
 	}
-	.navbar,.navbar.active {
+	.navbar,
+	.navbar.active {
 		all: unset;
 		margin-inline-start: auto;
 	}
@@ -897,50 +916,40 @@ body {
 	}
 }
 
-
 #loadinPage-loading-screen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--oxford-blue-2);
-    z-index: 9999;
-    animation: optoremove 5s ease-in-out forwards;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: var(--oxford-blue-2);
+	z-index: 9999;
 }
 .loadinPage-loader-text {
-    font-size: 5rem;
-    font-weight: bold;
-    color: var(--royal-blue-light);
-    animation: loadinPage-spin-shrink 3s ease-in-out forwards;
+	font-size: 5rem;
+	font-weight: bold;
+	color: var(--royal-blue-light);
+	animation: loadinPage-spin-shrink 3s ease-in-out forwards;
 }
 #loadinPage-content {
-    display: none;
-    padding: 20px;
-    text-align: center;
+	display: none;
+	padding: 20px;
+	text-align: center;
 }
 @keyframes loadinPage-spin-shrink {
-    0% {
-        transform: scale(1) rotate(0deg);
-        color: var(--royal-blue-light);
-    }
-    50% {
-        transform: scale(1.2) rotate(360deg);
-        color: var(--light-steel-blue);
-    }
-    100% {
-        transform: scale(0) rotate(180deg);
-        color: var(--carolina-blue);
-    }
-}
-@keyframes optoremove {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+	0% {
+		transform: scale(1) rotate(0deg);
+		color: var(--royal-blue-light);
+	}
+	50% {
+		transform: scale(4) rotate(360deg);
+		color: var(--light-steel-blue);
+	}
+	100% {
+		transform: scale(0) rotate(-720deg);
+		color: var(--carolina-blue);
+	}
 }
